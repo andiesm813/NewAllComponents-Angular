@@ -7,13 +7,11 @@ import { View1Component } from './view1/view1.component';
 import { IgxTabsModule, IgxIconModule, IgxAccordionModule, IgxExpansionPanelModule, IgxListModule, IgxAvatarModule, IgxStepperModule, IgxButtonModule, IgxRippleModule, IgxToggleModule, IgxTreeModule, IgxButtonGroupModule, IgxBadgeModule, IgxChipsModule, IgxInputGroupModule, IgxCheckboxModule, IgxRadioModule, IgxSwitchModule, IgcFormsModule, IgxSliderModule, IgxDatePickerModule, IgxSelectModule, IgxSimpleComboModule, IgxCalendarModule, IgxCardModule, IgxGridModule, IgxSnackbarModule, IgxDialogModule, IgxBannerModule, IgxNavbarModule, IgxNavigationDrawerModule } from '@infragistics/igniteui-angular';
 import { IgxCategoryChartModule } from 'igniteui-angular-charts';
 import { FormsModule } from '@angular/forms';
-import { View3Component } from './view3/view3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    View1Component,
-    View3Component
+    View1Component
   ],
   imports: [
     BrowserModule,

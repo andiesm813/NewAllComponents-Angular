@@ -1,19 +1,19 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { defineComponents, IgcRatingComponent } from 'igniteui-webcomponents';
 import { Subject, takeUntil } from 'rxjs';
-import { EmployeesType } from '../models/northwind/employees-type';
 import { BoxOfficeRevenueType } from '../models/financial/box-office-revenue-type';
+import { EmployeesType } from '../models/northwind/employees-type';
 import { FinancialService } from '../services/financial.service';
 import { NorthwindService } from '../services/northwind.service';
 
 defineComponents(IgcRatingComponent);
 
 @Component({
-  selector: 'app-view1',
-  templateUrl: './view1.component.html',
-  styleUrls: ['./view1.component.scss']
+  selector: 'app-all-components',
+  templateUrl: './all-components.component.html',
+  styleUrls: ['./all-components.component.scss']
 })
-export class View1Component implements OnInit, OnDestroy {
+export class AllComponentsComponent implements OnInit, OnDestroy {
   private destroy$: Subject<void> = new Subject<void>();
   public checked: boolean = true;
   public value: number = 0;
